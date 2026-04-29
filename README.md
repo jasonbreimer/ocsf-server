@@ -11,7 +11,7 @@ Normalizing security events to OCSF requires deep familiarity with hundreds of a
 - Inconsistent mappings across team members
 - No way to validate your thinking quickly
 
-This MCP server gives an AI assistant (like Claude) live, structured access to the OCSF schema. You can describe a raw event and ask the assistant to help you map it to OCSF — it will look up the right classes, attributes, and objects in real time and guide you through normalization accurately and quickly.
+This MCP server gives an AI assistant (like Claude in my testing) live, structured access to the OCSF schema. You can describe a raw event and ask the assistant to help you map it to OCSF — it will look up the right classes, attributes, and objects in real time and guide you through normalization accurately and quickly.
 
 ---
 
@@ -133,9 +133,11 @@ From the inspector you can:
 - `get_object` → name: `"process"`
 - `list_categories` → (no arguments)
 
+<img width="1906" height="968" alt="Screenshot 2026-04-29 at 12 40 14 PM" src="https://github.com/user-attachments/assets/fe82da44-7542-4b89-8f28-d3b4943577bf" />
+
 ### Option B: Claude Desktop
 
-Add the MCP server to your `~/Library/Application Support/Claude/claude_desktop_config.json`:
+Add the MCP server to your `~/claude_desktop_config.json`:
 
 ```json
 {
