@@ -459,7 +459,8 @@ defmodule Schema.Generator do
 
     Enum.map(1..n, fn _ -> generate_sample_object(object, Process.get(:profiles)) end)
   end
-
+  
+  defp generate_data(_name, _type, %{example: example}), do: example
   defp generate_data(:ref_time, _type, _field),
     do: DateTime.utc_now() |> DateTime.to_iso8601()
 

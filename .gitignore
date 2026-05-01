@@ -45,4 +45,6 @@ erl_crash.dump
 # Ignore generated doc file
 priv/static/swagger.json
 
-/log
+/logcompiled-schema/
+ocsf-schema/
+add_examples.py
